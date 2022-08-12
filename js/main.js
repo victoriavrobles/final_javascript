@@ -1,61 +1,13 @@
-let productos = [
-    {id: 1,
-    nombre: "PROOF (Standard Edition)",
-    precio: 20000,
-    artista: "BTS",
-    imagen: "./assets/img/proof.jpg",
-    },
-    {id: 2,
-    nombre: "Zero Fever Epilogue",
-    precio: 7850,
-    artista: "ATEEZ",
-    imagen: "./assets/img/zerofever.png",
-    },
-    {id: 3,
-    nombre: "Love Yourself: Tear",
-    precio: 9000,
-    artista: "BTS",
-    imagen: "./assets/img/loveyourself.jpg",
-    },
-    {id: 4,
-    nombre: "The Album (Version 2)",
-    precio: 7900,
-    artista: "Blackpink",
-    imagen: "./assets/img/thealbum.png",
-    },
-    {id: 5,
-    nombre: "Dimension: Answer",
-    precio: 9660,
-    artista: "NCT",
-    imagen: "./assets/img/dimensionanswer.png",
-    },
-    {id: 6,
-    nombre: "The Dream Chapter: Star",
-    precio: 6720,
-    artista: "TXT",
-    imagen: "./assets/img/dreamchapter.jpg",
-    },
-    {id: 7,
-    nombre: "Crazy In Love",
-    precio: 8800,
-    artista: "ITZY",
-    imagen: "./assets/img/crazyinlove.png",
-    },
-    {id: 8,
-    nombre: "No Easy",
-    precio: 8200,
-    artista: "Stray Kids",
-    imagen: "./assets/img/noeasy.png",
-    },
-    {id: 9,
-        nombre: "4 Only",
-        precio: 9340,
-        artista: "Lee Hi",
-        imagen: "./assets/img/4only.jpg",
-        },
-];
+let productos = [];
 
+fetch("./js/data.json")
+    .then((respuesta) => respuesta.json())
+    .then((data) => {
+    cargarProductos(data);
+    });
 
+const cargarProductos = (data) => {
+    productos = data;
 const contenedor = document.getElementById("container");
 productos.forEach((producto) => {
     let card = document.createElement("div");
@@ -70,7 +22,7 @@ productos.forEach((producto) => {
     card.innerHTML = html;
     contenedor.appendChild(card);
 });
-
+}
 
 function actualizarBotonCarrito (){
     let productos = obtenerProductosCarrito();
