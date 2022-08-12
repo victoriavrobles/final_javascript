@@ -1,0 +1,129 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #DEDBD2;
+    color: rgb(0, 0, 0);
+}
+
+header{
+width: max-content;
+margin: 0 auto;
+background-color: #B0C4B1;
+font-family: 'Montserrat', sans-serif;
+font-weight: 500;
+}
+
+.nav a{
+    color: #F7E1D7;
+}
+
+.nav a:hover{
+    color: #4A5759;
+}
+
+.cart{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    color: #506640;
+    background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(14.8px);
+-webkit-backdrop-filter: blur(14.8px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.car-img{
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+
+.color-btn{
+    background-color: #a5d4a6;
+}
+
+.color-btn:hover{
+    background-color: #cacbe5;
+}
+
+.producto-carrito{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.form{
+    width:600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    margin: auto;
+    background-color: aliceblue;
+    color: black;
+}
+
+.form i{
+    padding: 10px;
+}
+
+.form i.active{
+    color: #506640;
+    transform: scale(1.2);
+}
+
+button{
+    float:right;
+    padding:8px 12px;
+    margin:8px 0 0;
+    font-family:'Montserrat',sans-serif;
+    border:2px solid #78788c;
+    background:0;
+    color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s
+}
+
+button:hover{
+    background:#78788c;
+    color:#fff;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    font-family:'Montserrat',sans-serif;
+    transition:all .3s;
+    border-bottom:2px solid #bebed2
+}
+
+.product-details{
+    color: white;
+}
+
+#remove-product{
+    margin: 5px;
+}
+
+.total-carrito{
+    color: white;
+    padding: 25px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+
+footer{
+    background-color: #B0C4B1;
+    color: #506640;
+}
