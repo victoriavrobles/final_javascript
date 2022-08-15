@@ -6,6 +6,20 @@ body{
     color: rgb(0, 0, 0);
 }
 
+h2, h3{
+    color: #506640;
+    font-size: 20px;
+}
+
+a{
+    color: #506640;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #F7E1D7;
+}
+
 header{
 width: max-content;
 margin: 0 auto;
@@ -16,6 +30,7 @@ font-weight: 500;
 
 .nav a{
     color: #F7E1D7;
+    font-size: 20px;
 }
 
 .nav a:hover{
@@ -33,12 +48,6 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(14.8px);
 -webkit-backdrop-filter: blur(14.8px);
 border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.car-img{
-    width: 80px;
-    height: 80px;
-    margin: 10px;
 }
 
 .color-btn{
@@ -114,16 +123,101 @@ input{
 }
 
 .total-carrito{
-    color: white;
-    padding: 25px;
-    font-weight: bold;
-    display: flex;
-    justify-content: space-evenly;
-    align-content: center;
+    color: #506640;
+
 }
 
+.info {
+    width: 100%;
+}
 
-footer{
+.info .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0;
+}
+
+.info p {
+    margin: 0px 15px;
+}
+
+.info i {
+    margin: 0px 15px;
+}
+
+.lv {
+    border-left: 1px solid #868686;
+    height: 100px;
+}
+
+footer {
     background-color: #B0C4B1;
     color: #506640;
+    width: 100%;
+    height: auto;
+    width: 100%;
+    height: auto;
+    padding: 8px;
+    font-family: "Roboto", sans-serif;
 }
+
+footer p {
+    text-align: center;
+}
+
+.navfooter {
+    padding: 0;
+    margin: 0;
+}
+
+.navfooter li {
+    display: inline-block;
+}
+
+.navfooter li a {
+    padding: 10px;
+    color: white;
+}
+
+.navfooter li a:hover {
+    color: #506640;
+}
+
+.social h3 {
+    font-weight: bold;
+    font-size: 18px;
+    color: #506640;
+}
+
+.social ul li {
+    display: inline-block;
+}
+
+.social ul li a {
+    display: inline-block;
+    padding: 10px;
+}
+
+.social ul li.in a {
+    color: #df588a;
+}
+
+.social ul li.fb a {
+    color: #3742d0;
+}
+
+.social ul li.pin a {
+    color: #dd4d5a;
+}
+
