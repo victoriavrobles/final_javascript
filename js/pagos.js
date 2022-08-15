@@ -33,4 +33,8 @@ function finalizarCompra () {
         text: "Gracias por elegir Tear Store!",
         icon: "success",
     });
+
+    localStorage.removeItem("carrito"),
+            actualizarBotonCarrito();
+            ProductosCarrito();
 }
