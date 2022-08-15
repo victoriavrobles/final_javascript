@@ -36,5 +36,6 @@ function finalizarCompra () {
 
     localStorage.removeItem("carrito"),
             actualizarBotonCarrito();
-            ProductosCarrito();
 }
+
+actualizarBotonCarrito();
